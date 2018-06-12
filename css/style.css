@@ -17,16 +17,19 @@
     background-color: rgba(0,0,0,0.9);
     z-index: 2;
     cursor: pointer;
+    overflow-y:scroll;
+    
 }
 #name{
     position: absolute;
     left:30%;
     top: 2%;
+    
 }
 #demo{
     position: absolute;
     color: white;
-    top: 20%;
+    top: 10%;
     left: 2%;
     font-size: 2em;
 }
