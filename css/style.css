@@ -18,7 +18,7 @@
     z-index: 2;
     cursor: pointer;
     overflow-y:scroll;
-    
+    visibility: hidden;
 }
 #name{
     position: absolute;
@@ -32,4 +32,36 @@
     top: 10%;
     left: 2%;
     font-size: 2em;
+}
+.btn {
+    position: absolute;
+    right: 0px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.success {
+  border-color: #4CAF50;
+  color: green;
+}
+
+.success:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+#second{
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 100%;
+    right: 0%;
+    bottom: 0;
+    background-color: rgba(0,0,0,1);
+    z-index: 2;
+    cursor: pointer;
+    overflow-y:scroll;
 }
