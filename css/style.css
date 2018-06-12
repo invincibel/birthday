@@ -2,11 +2,12 @@
 * {box-sizing: border-box;}
 .img-comp-container {
 position: absolute;
+    width: 100%;    
    /*should be the same height as the images*/
 }
 .img-comp-img {
   position: absolute;
-  width: auto;
+  width: 40%;
   height: auto;
   overflow:hidden;
 }
