@@ -14,7 +14,19 @@
     height: 100%;
     right: 0%;
     bottom: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     z-index: 2;
     cursor: pointer;
+}
+#name{
+    position: absolute;
+    left:30%;
+    top: 2%;
+}
+#demo{
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 2%;
+    font-size: 2em;
 }
