@@ -23,7 +23,7 @@ if(!empty($html)){//check whether the html is returned or not
 	$pokemon_xpath = new DOMXPath($pokemon_doc);
 
 	//get all the h2's with an id
-	$pokemon_row = $pokemon_xpath->query('//p');
+	$pokemon_row = $pokemon_xpath->query('//kp');
 
 	if($pokemon_row->length > 0){
 		foreach($pokemon_row as $row){
@@ -31,7 +31,7 @@ if(!empty($html)){//check whether the html is returned or not
                 continue;
             if($row->nodeValue=="Contents" || $row->nodeValue=="Happy Birthday to Best female Friend")
                 continue;
-			echo $row->nodeValue . "<br/>";
+			echo $row->nodeValue . "<br/><br/>";
 		}
 	}    
         }
@@ -54,7 +54,7 @@ if(!empty($html)){//check whether the html is returned or not
     <p class="expire">Expires: Tommorow at 0.00am</p>
   </div>
 </div>
-            <button class="button"><span>Regards.. </span></button>
+            <a href="mailer/index.php">  <button class="button"><span>Regards.. </span></button></a>
         </div>
     <div class="container">
         <div class="balloon"></div>
