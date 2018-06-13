@@ -12,7 +12,7 @@
             <button class="btn success" id="btun" onclick="hide();">Wish ankit happy birthday</button>
             <font color="white" size="30" id="name">Ankit Kumar</font>
             <p id="demo"><?php
- /* @$html = file_get_contents('https://www.topbirthdayquotes.com/happy-birthday-wishes-for-best-friend-quotes/');// for getting the htmlusing @ on starting to avoid warnings 
+ @$html = file_get_contents('https://www.topbirthdayquotes.com/happy-birthday-wishes-for-best-friend-quotes/');// for getting the htmlusing @ on starting to avoid warnings 
 
  $pokemon_doc= new DOMDocument();
 libxml_use_internal_errors(TRUE);//disable libxml errors
@@ -35,10 +35,11 @@ if(!empty($html)){//check whether the html is returned or not
 		}
 	}    
         }
-        */        
+             
 ?></p>
         </div>
         <div id="second">
+            <a href="#" class="previous" onclick="show();">&laquo; Previous</a>
         <div class="coupon" >
   <div class="container">
     <h3>Ankit's birthday</h3>
@@ -53,6 +54,7 @@ if(!empty($html)){//check whether the html is returned or not
     <p class="expire">Expires: Tommorow at 0.00am</p>
   </div>
 </div>
+            <button class="button"><span>Regards.. </span></button>
         </div>
     <div class="container">
         <div class="balloon"></div>
@@ -67,8 +69,17 @@ if(!empty($html)){//check whether the html is returned or not
    <!-- <embed src="http://asmaa.site/Eid.mp3" width="180" height="90" loop="false" autostart="false" hidden="true" /> -->
 <script>
     function hide(){
-       // document.getElementById("maker").style.visibility="hidden";
-    }    
+       var box1 = document.getElementById("maker");
+        var box2 = document.getElementById("second");
+        box1.style.visibility = "hidden";
+        box2.style.visibility = "visible";
+    }  
+    function show(){
+     var box1 = document.getElementById("maker");
+        var box2 = document.getElementById("second");
+        box1.style.visibility = "visible";
+        box2.style.visibility = "hidden";   
+    }
 </script>
     </body>
 </html>
