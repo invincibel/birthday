@@ -12,7 +12,7 @@
             <button class="btn success" id="btun" onclick="hide();">Wish ankit happy birthday</button>
             <font color="white" size="30" id="name">Ankit Kumar</font>
             <p id="demo"><?php
-/* @$html = file_get_contents('https://www.topbirthdayquotes.com/happy-birthday-wishes-for-best-friend-quotes/');// for getting the htmlusing @ on starting to avoid warnings 
+ /* @$html = file_get_contents('https://www.topbirthdayquotes.com/happy-birthday-wishes-for-best-friend-quotes/');// for getting the htmlusing @ on starting to avoid warnings 
 
  $pokemon_doc= new DOMDocument();
 libxml_use_internal_errors(TRUE);//disable libxml errors
@@ -35,12 +35,24 @@ if(!empty($html)){//check whether the html is returned or not
 		}
 	}    
         }
-    
-*/
+        */        
 ?></p>
         </div>
         <div id="second">
-            
+        <div class="coupon" >
+  <div class="container">
+    <h3>Ankit's birthday</h3>
+  </div>
+  <img src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Avatar" style="width:100%;">
+  <div class="container" style="background-color:white">
+    <h2><b>Get a chance of win an amazing party</b></h2> 
+    <p>to get a copoun just send ankit good wishes by only a click below</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">happy birthday</span></p>
+    <p class="expire">Expires: Tommorow at 0.00am</p>
+  </div>
+</div>
         </div>
     <div class="container">
         <div class="balloon"></div>
